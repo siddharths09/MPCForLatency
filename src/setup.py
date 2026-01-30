@@ -25,15 +25,11 @@ setup(
     entry_points={
         'console_scripts': [
             'turtle_controller = my_turtle_controller.turtle_controller:main',
-
-            # Added this 
             'network_delay_node = my_turtle_controller.network_delay_node:main',
-            # 2 new nodes
             'jitter_node = my_turtle_controller.jitter_node:main',
             'tunnel_node = my_turtle_controller.tunnel_node:main',
-
-            #Added thiss
             'mpc_supervisor_node = my_turtle_controller.mpc_supervisor_node:main',
+            'obstacle_visualizer = my_turtle_controller.obstacle_visualizer:main',
         ],
     },
 )
